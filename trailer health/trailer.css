@@ -1,0 +1,11 @@
+.name {
+    text-align: center;
+    margin: 20px auto;
+    font-family: Verdana, sans-serif;
+}
+
+.brakes,
+.axle {
+    display: flex;
+    justify-content: space-around;
+}
