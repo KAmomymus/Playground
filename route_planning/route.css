@@ -1,0 +1,109 @@
+.location {
+    height: 450px;
+    width: 450px;
+    /* border: 3px solid red; */
+    font-family: Verdana, sans-serif;
+    background-color: #68829e;
+    color: #e1e8ed;
+    margin: auto;
+}
+
+.heading {
+    padding: 15px;
+}
+
+.heading h1 {
+    text-align: center;
+}
+
+.location-img {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.location-img img {
+    height: 200px;
+    width: 200px;
+    /* margin: 25px; */
+}
+
+.coordinates {
+    margin-left: 65px;
+}
+
+.map {
+    display: flex;
+    justify-content: space-between;
+    gap: 9px;
+}
+
+.status,
+.cur-location {
+    font-family: Verdana, sans-serif;
+    height: 340px;
+    width: 350px;
+    /* border: 3px solid red; */
+    background-color: #e1e8ed;
+    margin: 10px;
+}
+
+.place {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.place img {
+    height: 100px;
+    padding: 0 15px;
+}
+
+.details {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 30px;
+}
+
+.dist {
+    text-align: center;
+}
+
+.time {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around !important;
+    align-items: center;
+}
+
+.time .time-img {
+    height: 55px;
+}
+
+.cur-location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.cur-city {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 37px;
+}
+
+.cur-city img,
+.dist-left img {
+    height: 60px;
+}
+
+.dist-left {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}

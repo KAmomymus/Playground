@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>doors monitoring</title>
+
+    <!-- css files -->
+    <link rel="stylesheet" href="doors.css">
+</head>
+
+<body>
+    <div class="monitor">
+        <section class="doors">
+
+            <div class="heading">
+                <h1>
+                    DOOR STATUS
+
+                </h1>
+            </div>
+
+            <div class="door-img">
+                <img src="assets/truck.png" alt="door">
+            </div>
+            <div class="door-indicators">
+
+                <button id="l-glow" onclick=lCloseDoor()>
+
+                    <span> Left Door Open</span>
+                </button>
+
+                <button id="r-glow" onclick=rCloseDoor()>
+                    <span> Right Door Open</span>
+                </button>
+            </div>
+
+        </section>
+        <div class="cur-location">
+            <h2>CURRENT LOCATION</h2>
+            <div class="cur-city">
+                <img src="assets/map.png" alt="city">
+                <h3 id="city-name"></h3>
+            </div>
+            <div class="cur-coordinates">
+                <h4>Longitude : <span id="long"></span></h4>
+                <!-- <br> -->
+                <h4>Latitude : <span id="lat"></span></h4>
+            </div>
+            <div class="dist-left">
+                <img src="assets/pin.png" alt="dist">
+                <h4><span id="dist-left"></span>(Distance Left)</h4>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script type="text/javascript" src="doors.js"></script>
+
+</html>

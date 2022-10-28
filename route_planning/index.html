@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Route Planning</title>
+
+    <!-- css files -->
+    <link rel="stylesheet" href="route.css">
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+
+</head>
+
+<body>
+    <section class="map">
+        <div class="e-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d2589522.462868652!2d8.681898833503686!3d50.667407004410265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x4799db34c1ad8fd3%3A0x79d5c11c7791cfe4!2sStuttgart%2C%20Germany!3m2!1d48.7758459!2d9.1829321!4m5!1s0x47a84e373f035901%3A0x42120465b5e3b70!2sBerlin%2C%20Germany!3m2!1d52.520006599999995!2d13.404954!5e0!3m2!1sen!2sin!4v1666901838706!5m2!1sen!2sin"
+                width="550" height="700" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div>
+
+            <div class="status">
+                <div class="place">
+                    <h2>Route Planning</h2>
+                    <div class="details">
+
+                        <img src="assets/destination.png" alt="destination">
+
+                        <div class="dest">
+                            <span class="start"><h3>Stuttgart,Germany</h3></span>
+                            <span class="dist"><h5>632 KM</h5></span>
+                            <span class="end"><h3>Berlin, Germany</h3></span>
+                        </div>
+                    </div>
+                    <div class="time">
+
+                        <img class="time-img" src="assets/clock.png" alt="">
+
+                        <span class="total-time"><h5>6 hr 51 min  (ETA)</h5></span>
+                    </div>
+                </div>
+            </div>
+            <div class="cur-location">
+                <h2>Current Location</h2>
+                <div class="cur-city">
+                    <img src="assets/map.png" alt="city">
+                    <h3 id="city-name"></h3>
+                </div>
+                <div class="cur-coordinates">
+                    <h4>Longitude : <span id="long"></span></h4>
+                    <!-- <br> -->
+                    <h4>Latitude : <span id="lat"></span></h4>
+                </div>
+                <div class="dist-left">
+                    <img src="assets/pin.png" alt="dist">
+                    <h4><span id="dist-left"></span>(Distance Left)</h4>
+                </div>
+            </div>
+        </div>
+
+        <section class="speed-chart">
+            <div id="chart_div" style="height: 700px; width: 550px; margin: auto;"></div>
+        </section>
+    </section>
+
+</body>
+<script type="text/javascript" src="route.js"></script>
+
+
+</html>
