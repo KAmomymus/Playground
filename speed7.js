@@ -1,4 +1,4 @@
-import Chart from 'https://cdn.jsdelivr.net/npm/chart.js';
+import { Chart } from 'https://cdn.jsdelivr.net/npm/chart.js';
 const plugin = ({ widgets, simulator }) => {
 
 
