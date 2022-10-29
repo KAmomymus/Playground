@@ -1,4 +1,4 @@
-import Chart from "./chart.js";
+const Chart = require('chart.js');
 const plugin = ({ widgets, simulator }) => {
 
 
