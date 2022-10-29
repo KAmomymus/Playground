@@ -70,7 +70,7 @@ const arr = [{60,1},{62,2},{65,3},{80,4},{70,5}];
 
 const plugin = ({widgets, simulator}) => {
   
-  widgets.register("route_plan",function(box,data,labels){console.log(box);
+  widgets.register("route_plan",function(box,arr){console.log(box);
   new Chart("myChart", {
   type: "line",
   data: arr,
