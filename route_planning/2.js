@@ -9,7 +9,7 @@ const plugin = ({widgets, simulator}) => {
     console.log(msg);
     console.log(box);
     boxGlobal = box;
-    boxGlobal.injectHTML(container);
+    boxGlobal.injectHTML(container.innerText);
     return () => {
             boxGlobal = null
             // Deactivation function for clearing intervals or such.
