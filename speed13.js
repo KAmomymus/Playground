@@ -1,4 +1,4 @@
-const Chart = require('chart.js');
+import Chart from 'chart.js/auto';
 const plugin = ({ widgets, simulator }) => {
 
 
