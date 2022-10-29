@@ -36,9 +36,8 @@ const config = {
 ;
 let boxGlobal = null
 
-widgets.register("graph", function(box) => {
-    boxGlobal = box
-    
+widgets.register("graph", function(box) {
+  
     }
 })
 }
