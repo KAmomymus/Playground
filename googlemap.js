@@ -5,7 +5,7 @@ const plugin = ({widgets, simulator}) => {
    container.innerText="Hello GoogleMaps....";
   var msg = "Hello World";
   let boxGlobal = null
-  widgets.register("test_plans",function(box,msg){
+  widgets.register("google_map",function(box,msg){
     console.log(msg);
     console.log(box);
     boxGlobal = box;
