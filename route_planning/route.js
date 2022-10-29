@@ -37,10 +37,10 @@ var i = 0;
 var curLocation = setInterval(function(){
     var data = cities[i]
     
-        document.getElementById('city-name').innerText = data.name;
-        document.getElementById('long').innerText = data.longitude;
-        document.getElementById('lat').innerText = data.latitude;
-        document.getElementById('dist-left').innerText = data.dist;
+        document.getElementById('city-name').innerHTML = data.name;
+        document.getElementById('long').innerHTML = data.longitude;
+        document.getElementById('lat').innerHTML = data.latitude;
+        document.getElementById('dist-left').innerHTML = data.dist;
         
    i++;
 } , 5000);
