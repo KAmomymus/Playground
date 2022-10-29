@@ -9,6 +9,7 @@ const data = {
     tension: 0.1
   }]
 };*/
+/*
 import {
   Chart,
   ArcElement,
@@ -64,19 +65,19 @@ Chart.register(
   SubTitle
 );
 
-
+*/
 const arr = [{60,1},{62,2},{65,3},{80,4},{70,5}];
 const msg = "Hello World";
 const plugin = ({widgets, simulator}) => {
   
   widgets.register("route_plan",function(box,arr){console.log(box);
-  new Chart("myChart", {
+  /*new Chart("myChart", {
   type: "line",
   data: arr,
   options: {
     legend: {display: false}
   }
-});
+});*/
                                                   
   widgets.register("route_plan1",function(box,msg){console.log(msg+"<br>");console.log(box);});
 }
