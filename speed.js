@@ -36,12 +36,9 @@ const config = {
 ;
 let boxGlobal = null
 
-widgets.register("graph", (box) => {
+widgets.register("graph", function(box) => {
     boxGlobal = box
-    box.injectNode(container)
-    return () => {
-        boxGlobal = null
-        // Deactivation function for clearing intervals or such.
+    
     }
 })
 }
