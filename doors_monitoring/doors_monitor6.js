@@ -31,8 +31,8 @@ widgets.register("doorstatus4", (box) => {
             </svg>
             </div>
             <div style="font-size: .8em; line-height: 1.5em;">
-                <div data-cell="Status" id="r-glow" style="display: none;"><strong>Right Door Open: </strong><span></span></div>
-                <div data-cell="Distance" id="l-glow" style="display: none;"><strong>Left Door Open: </strong><span></span></div>
+                <div data-cell="Status" id="r-glow" ><strong>Right Door Open: </strong><span></span></div>
+                <div data-cell="Distance" id="l-glow" ><strong>Left Door Open: </strong><span></span></div>
                 
             </div>
         </div>
