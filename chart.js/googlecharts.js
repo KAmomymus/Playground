@@ -3,6 +3,7 @@ google.charts.load('current', {packages: ['corechart', 'line']});
 google.charts.setOnLoadCallback(drawBasic);
 
 const plugin = ({widgets, simulator}) => {
+    let boxGlobal = null
 
       var data = new google.visualization.DataTable();
       data.addColumn('number', 'X');
@@ -35,7 +36,7 @@ const plugin = ({widgets, simulator}) => {
       var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
 
       chart.draw(data, options);
-  
+
   widgets.register("linechart", (box) => {
         boxGlobal = box
         box.injectHTML("<div id="chart_div">Speed Chart</div>")
@@ -43,7 +44,7 @@ const plugin = ({widgets, simulator}) => {
             boxGlobal = null
             // Deactivation function for clearing intervals or such.
         }
-    })
-    }
+    });
+}
 
-export default plugin
+export default plugin;
