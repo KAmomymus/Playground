@@ -1,10 +1,10 @@
-import Chart from './chart.js/auto';
 const plugin = ({ widgets, simulator }) => {
 
 
 
     widgets.register("graph", (box) => {
-        box.injectHTML(`<div style="height: 400px; width: 400px">
+        box.injectHTML(` <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <div style="height: 400px; width: 400px">
         <canvas id="myChart"></canvas>
     </div>`)
         const labels = [
