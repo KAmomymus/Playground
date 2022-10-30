@@ -1,12 +1,22 @@
 const plugin = ({ widgets, simulator }) => {
 
-
+    const container = document.createElement("div")
+    container.setAttribute("script", `https://cdn.jsdelivr.net/npm/chart.js`)
+    container.innerHTML = (`<div style="height: 400px; width: 400px">
+    <canvas id="myChart"></canvas>
+</div>`)
 
     widgets.register("graph", (box) => {
-        box.injectHTML(` <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-        <div style="height: 400px; width: 400px">
-        <canvas id="myChart"></canvas>
-    </div>`)
+
+
+
+
+box.injectNode(container)
+
+    //     box.injectHTML(` <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    //     <div style="height: 400px; width: 400px">
+    //     <canvas id="myChart"></canvas>
+    // </div>`)
         const labels = [
             'January',
             'February',
@@ -31,7 +41,7 @@ const plugin = ({ widgets, simulator }) => {
             options: {}
         };
         const myChart = new Chart(
-        document.getElementById('myChart'),
+            document.getElementById('myChart'),
             config);
 
 
