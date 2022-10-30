@@ -21,7 +21,7 @@ widgets.register("doorstatus4", (box) => {
         </style>
         <div style="display: flex; flex-direction: column; width: 100%; height: 100%; padding: 30px 40px; justify-content: center; color: #808080; user-select: none; background-color: #f7f7f7;">
             <div style="display: flex; align-items:center; justify-content: center; margin-bottom: 30px;">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="150" height="150" viewBox="0 0 150 150" xml:space="preserve" >
 
             <defs>
             </defs>
@@ -45,8 +45,8 @@ widgets.register("doorstatus4", (box) => {
         var dOpen = setInterval(function () {
             if (i % 2 == 0) {
                 open[i] = true;
-                document.getElementById("l-glow").style.display = "block";
-                document.getElementById("r-glow").style.display = "block"
+                document.innerHTML("#l-glow").style.display = "block";
+                document.innerHTML("#r-glow").style.display = "block"
             }
             else {
                 open[i] = false;
