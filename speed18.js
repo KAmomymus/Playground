@@ -1,12 +1,9 @@
-var Chart = document.createElement('script');  
-Chart.setAttribute('src','https://cdn.jsdelivr.net/npm/chart.js');
-document.head.appendChild(Chart);
-
-
-
 const plugin = ({ widgets, simulator }) => {
 
-
+    var chartScript = document.createElement('script');  
+    chartScript.setAttribute('src','https://cdn.jsdelivr.net/npm/chart.js');
+    document.head.appendChild(chartScript);
+    
 
     widgets.register("graph", (box) => {
         
