@@ -33,6 +33,23 @@ widgets.register("doorstatus4", (box) => {
 
         box.injectNode(div)
     })
+    var open = []
+        var i = 0;
+        var dOpen = setInterval(function () {
+            if (i % 2 == 0) {
+                open[i] = true;
+                document.getElementById("l-glow").style.display = "block";
+                document.getElementById("r-glow").style.display = "block"
+            }
+            else {
+                open[i] = false;
+                document.getElementById("l-glow").style.display = "none";
+                document.getElementById("r-glow").style.display = "none"
+            }
+
+
+            i++;
+        }, 5000);
   
   
   }
