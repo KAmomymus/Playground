@@ -1,13 +1,13 @@
 const plugin = ({ widgets, simulator, vehicle }) => {
 
-    let statusDiv = null
+
 
     widgets.register("doorstatus", (box) => {
         const div = document.createElement("div")
 
-        statusDiv = div
+     
 
-        div.innerHTML = `
+        div.innerHTML = (`
         
         <div class="doors" style="height: 340px; width: 320px; font-family: Verdana, sans-serif; margin: auto 0; background-color: #e1e8ed;">
 
@@ -50,7 +50,7 @@ const plugin = ({ widgets, simulator, vehicle }) => {
             </div>
 
         </div>
-        `
+        `)
 
         box.injectNode(div)
 
