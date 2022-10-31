@@ -12,7 +12,7 @@ const plugin = ({widgets, simulator}) => {
   });*/
   widgets.register("brake_front_1",function(box){
     boxGlobal = box;
-    boxGlobal.injectHTML('<iframe src="https://front-brake.netlify.app/" width="240" height="240" style="border:0;" allowfullscreen="false" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>');
+    boxGlobal.injectHTML('<iframe src="https://front-brake.netlify.app/" width="280" height="280" style="border:0;" allowfullscreen="false" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>');
     return () => {
             boxGlobal = null
             // Deactivation function for clearing intervals or such.
